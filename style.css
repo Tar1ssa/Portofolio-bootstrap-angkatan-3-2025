@@ -1,0 +1,89 @@
+/* variable global di dalam css */
+
+:root {
+    --primary-color: #17313E;
+    --second-color: #415E72;
+    --accent-color: #C5B0CD;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-section {
+    background-color: var(--primary-color);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.page-section {
+    min-height: 100vh;
+    padding-top: 80px;
+
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 50px;
+
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 3px;
+    background-color: var(--second-color);
+    transform: translateX(-50%);
+}
+
+.lead {
+    font-weight: normal;
+}
+
+.fade-in {
+    /* opacity: 0; */
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.team-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 3rem;
+    color: white;
+}
+
+.left-bar {
+    max-width: max-content;
+    padding: 0.5rem 1rem;
+    max-height: max-content;
+    background-color: #415E72;
+    border-radius: 0 10px 10px 0;
+}
